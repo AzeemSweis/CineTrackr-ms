@@ -3,6 +3,7 @@
 # Python (Backend)
 backend/venv/
 __pycache__/
+.env
 
 ##### Node (Frontend) #####
 # dependencies
