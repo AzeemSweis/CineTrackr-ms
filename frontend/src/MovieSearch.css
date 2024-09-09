@@ -1,0 +1,56 @@
+.movie-search {
+    position: relative;
+    width: 100%;
+    max-width: 85%;  /* Allow full width */
+    margin-bottom: 20px;
+}
+
+.animated-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    white-space: nowrap;  /* Prevent movie titles from wrapping */
+}
+
+.dropdown-item span {
+    flex-grow: 1;
+    padding-right: 15px;  /* Space between title and buttons */
+    text-align: left;
+}
+
+.dropdown-item button {
+    margin-left: 10px;
+    white-space: nowrap;  /* Ensure buttons don’t shrink or wrap */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
